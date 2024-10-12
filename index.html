@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | Share Modal</title>
+    <!-- Link Favicon -->
+    <link rel="shortcut icon" href="download.png" type="image/x-icon">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+<body>
+  
+    <!--  -->
+    <div class="wrapper">
+        <!-- For the circle Animation -->
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+
+           <!-- For the Profile  -->
+           <div class="container">
+            <!-- Image -->
+            <div>
+                 <img src="Another-Photoroom-removebg-preview (1).png" alt="">
+                </div>
+           
+            <div class="userName">
+                <h2><span>Abhishek Rauniyar</span></h2>
+               
+            </div>
+            
+            <!-- Designation -->
+            <div class="designation">
+                <p>
+                 Student, Galgotias University
+                </p>
+              </div>
+           
+              <!-- Button -->
+            <div class="btnGroup">
+
+                <!-- For the Share My profile -->
+
+                <button class="btn btnShare" onclick="openModal()">
+                    <i class="fa-solid fa-share"></i>
+
+                   <div>Share My Profile</div> 
+                </button>
+                  
+                <button class="btn btnFollow">
+                    <a href="https://www.linkedin.com/in/abhishek-rauniyar-301306173">Follow Me</a>
+                  </button>
+                <!-- For the Follow Me button -->
+
+               
+            </div>
+           </div>
+    </div>
+
+      <!-- Modal Component  -->
+      <div class="modal">
+        <div class="modalHeader">
+          <h1>Share My Profile</h1>
+          <div>
+            <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+          </div>
+        </div>
+  
+        <div>
+          <h3>Share this via</h3>
+          <div class="iconContainer">
+            <a
+              href="https://www.facebook.com/login/"
+              class="icon"
+              id="facebook"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://x.com/?lang=en" class="icon" id="twitter">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/accounts/login/"
+              class="icon"
+              id="instagram"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://web.whatsapp.com/" class="icon" id="whatsapp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://web.telegram.org/z/" class="icon" id="telegram">
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Overlay  -->
+      <div class="overlay" onclick="closeModal()"></div>
+   
+     <!-- Font Awesome -->
+     <script
+     src="https://kit.fontawesome.com/58a810656e.js"
+     crossorigin="anonymous"
+   ></script>
+
+    <!-- Link JS -->
+    <script src="index.js"></script>
+
+
+</body>
+</html>
